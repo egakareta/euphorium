@@ -122,9 +122,6 @@ Please find these [examples](https://github.com/egakareta/euphorium/tree/master/
 
 ## License
 
-Licensed under either of:
+Dual-licensed under the [MIT License](https://opensource.org/licenses/MIT) and the [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0). Choose whichever you prefer. This license only applies to Euphorium code.
 
-- [Apache License, Version 2.0](LICENSE-APACHE)
-- [MIT License](LICENSE-MIT)
-
-at your option.
+By submitting a contribution, including code submitted through a pull request, you agree that your contribution will be dual-licensed under the MIT License and the Apache License, Version 2.0, without any additional terms or conditions.
