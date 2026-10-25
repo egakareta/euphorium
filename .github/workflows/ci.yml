@@ -47,17 +47,24 @@ jobs:
         run: trunk build
 
   test-native:
-    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    env:
+      MISE_ENABLE_TOOLS: rust
     steps:
       - uses: actions/checkout@v7
         with:
           submodules: recursive
       - uses: jdx/mise-action@v4
         with:
-          bootstrap: true
+          bootstrap: ${{ runner.os == 'Linux' }}
           bootstrap_args: "--update"
       - uses: Swatinem/rust-cache@v2
       - name: Configure virtual ALSA output
+        if: runner.os == 'Linux'
         run: |
           cat > ~/.asoundrc <<'EOF'
           pcm.!default {
