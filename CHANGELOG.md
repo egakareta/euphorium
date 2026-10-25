@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.6.1] - 2026-10-25
+
+### Added
+
+- Expanded CI to test native builds on Linux, macOS, and Windows, and verify locked builds,
+  WebAssembly builds, crate packaging, and the example app.
+
+### Changed
+
+- Removed the unused optional `parking_lot_core` dependency and its nightly feature activation.
+- Clarified the project's dual-license and contribution terms.
+
 ## [0.6.0] - 2026-10-03
 
 ### Added
