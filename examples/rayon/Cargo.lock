@@ -1327,7 +1327,6 @@ dependencies = [
  "getrandom 0.4.3",
  "js-sys",
  "log",
- "parking_lot_core",
  "thiserror 2.0.20",
  "wasm-bindgen",
  "wasm-bindgen-futures",
