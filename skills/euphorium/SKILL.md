@@ -39,7 +39,10 @@ Prefer `default-features = false` and select only the features you need:
 
 ```toml
 [dependencies]
-euphorium = { version = "0.2", default-features = false, features = ["mp3", "wav"] }
+euphorium = { version = "0.2", default-features = false, features = [
+    "mp3",
+    "wav",
+] }
 ```
 
 Use `flac`, `mp3`, `mp4`, `vorbis`, and `wav` for decoding those formats. Use `asio` or `jack`
