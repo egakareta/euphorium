@@ -1,6 +1,6 @@
 [package]
 name = "euphorium"
-version = "0.6.0"
+version = "0.6.1"
 edition = "2024"
 description = "Painless audio playback for native and web platforms"
 documentation = "https://docs.rs/euphorium"
